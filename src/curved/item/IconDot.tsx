@@ -27,8 +27,8 @@ const IconDotComponent = (props: IconDotProps) => {
       }
     }
   );
-  const opacity = useInterpolate(progress, [0, 0.6, 1], [0, 0, 1]);
-  const scale = useInterpolate(progress, [0, 1], [0.2, 1]);
+  // const opacity = useInterpolate(progress, [0, 0.6, 1], [0, 0, 1]);
+  // const scale = useInterpolate(progress, [0, 1], [0.2, 1]);
 
   // reanimated style
   const style = useAnimatedStyle(() => ({
