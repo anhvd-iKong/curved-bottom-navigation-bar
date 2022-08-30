@@ -55,7 +55,7 @@ const DotComponent = (props: DotProps) => {
   const translateY = useInterpolate(
     progress,
     [0, 1],
-    [15 - barHeight, -(heightHole - HEIGHT_HOLE + 5)]
+    [15 - barHeight, -(heightHole - heightHole + 5)]
   );
 
   const opacity = useInterpolate(progress, [0, 1], [1, 1]);
