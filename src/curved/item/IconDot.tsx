@@ -5,7 +5,7 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated';
-import { sharedTiming, useInterpolate } from '../../AnimatedHelper';
+import { sharedTiming } from '../../AnimatedHelper';
 
 interface IconDotProps {
   index: number;
