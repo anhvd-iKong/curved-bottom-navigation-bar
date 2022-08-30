@@ -109,9 +109,9 @@ const ButtonTabItemComponent = (props: TabBarItemProps) => {
     <TouchableOpacity onPress={_onPress} activeOpacity={0.7}>
       <View style={[styles.buttonTab, buttonTab]}>
         <Animated.View style={[containerIconStyle]}>
-          {renderIcon()}
-          {titleShown ? showTitle() : null}
+          {!focused && renderIcon()}
         </Animated.View>
+        {titleShown ? showTitle() : null}
       </View>
     </TouchableOpacity>
   );
