@@ -33,8 +33,8 @@ const IconDotComponent = (props: IconDotProps) => {
   // reanimated style
   const style = useAnimatedStyle(() => ({
     position: 'absolute',
-    opacity: opacity.value,
-    transform: [{ scale: scale.value }],
+    // opacity: opacity.value,
+    // transform: [{ scale: scale.value }],
   }));
 
   // render
