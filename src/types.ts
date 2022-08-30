@@ -66,6 +66,8 @@ export interface TabBarViewProps extends TabBarAnimationConfigurableProps {
   titleShown: boolean;
 
   isRtl: boolean;
+  
+  heightHole?: number;
 }
 
 export interface TabBarItemProps
