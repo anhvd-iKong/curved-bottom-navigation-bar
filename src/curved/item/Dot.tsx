@@ -25,7 +25,7 @@ const DotComponent = (props: DotProps) => {
   } = props;
 
   // const
-  const { bottom } = useSafeAreaInsets();
+  // const { bottom } = useSafeAreaInsets();
   const inputRange = useMemo(
     () => routes.map((_: any, index: number) => index),
     [routes]
