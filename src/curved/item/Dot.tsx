@@ -58,7 +58,7 @@ const DotComponent = (props: DotProps) => {
     [15 - barHeight, -(heightHole - HEIGHT_HOLE + 5)]
   );
 
-  const opacity = useInterpolate(progress, [0, 1], [0.2, 1]);
+  const opacity = useInterpolate(progress, [0, 1], [1, 1]);
 
   // reanimated style
   const iconContainerStyle = useAnimatedStyle(() => ({
