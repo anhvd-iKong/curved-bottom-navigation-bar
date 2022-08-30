@@ -115,4 +115,6 @@ export interface DotProps {
   isRtl: boolean;
 
   navigationIndex: number;
+  
+  heightHole: number;
 }
