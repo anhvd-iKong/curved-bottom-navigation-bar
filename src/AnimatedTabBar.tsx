@@ -13,6 +13,7 @@ import {
   SIZE_DOT,
   TAB_BAR_COLOR,
   TAB_BAR_HEIGHT,
+  HEIGHT_HOLE
 } from './curved/constant';
 import { CurvedTabBar } from './curved/CurvedTabBar';
 import type {
@@ -63,6 +64,12 @@ interface AnimatedTabBarProps
    * @default false
    */
   titleShown?: boolean;
+      
+  /**
+    * height of hole view
+    * @default 50
+    */
+  heightHole?: number;
 }
 const AnimatedTabBarComponent = (props: AnimatedTabBarProps) => {
   // props
@@ -78,6 +85,7 @@ const AnimatedTabBarComponent = (props: AnimatedTabBarProps) => {
     dotColor = TAB_BAR_COLOR,
     titleShown = false,
     barWidth,
+    heightHole = HEIGHT_HOLE
   } = props;
 
   // variables
@@ -172,6 +180,7 @@ const AnimatedTabBarComponent = (props: AnimatedTabBarProps) => {
       navigationIndex={navigationIndex}
       routes={getRoutes()}
       duration={duration}
+      heightHole={heightHole}
     />
   );
 };
