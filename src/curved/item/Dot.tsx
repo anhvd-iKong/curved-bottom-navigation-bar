@@ -2,7 +2,7 @@
 import React, { memo, useMemo } from 'react';
 import isEqual from 'react-fast-compare';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+// import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useInterpolate } from '../../AnimatedHelper';
 import type { DotProps } from '../../types';
 import { HEIGHT_HOLE } from '../constant';
