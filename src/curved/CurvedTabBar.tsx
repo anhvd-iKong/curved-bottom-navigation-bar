@@ -169,6 +169,7 @@ const CurvedTabBarComponent = (props: TabBarViewProps) => {
           selectedIndex={indexAnimated}
           routes={routes}
           progress={progress}
+          heightHole={heightHole}
         />
         {routes.map(renderButtonTab)}
       </View>
