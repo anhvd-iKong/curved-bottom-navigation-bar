@@ -40,6 +40,7 @@ const CurvedTabBarComponent = (props: TabBarViewProps) => {
     navigationIndex,
     dotSize: SIZE_DOT,
     barHeight = TAB_BAR_HEIGHT,
+    heightHole = HEIGHT_HOLE,
   } = props;
   // state
   const { bottom } = useSafeAreaInsets();
@@ -107,11 +108,11 @@ const CurvedTabBarComponent = (props: TabBarViewProps) => {
     const centerHoleX = xPath.value + widthTab / 2;
     return {
       d: `M0,0 L${centerHoleX - SIZE_DOT},0
-      C${centerHoleX - SIZE_DOT * 0.5},0 ${
-        centerHoleX - SIZE_DOT * 0.75
-      },${HEIGHT_HOLE} ${centerHoleX},${HEIGHT_HOLE} 
-      C${centerHoleX + SIZE_DOT * 0.75},${HEIGHT_HOLE} ${
-        centerHoleX + SIZE_DOT * 0.5
+      C${centerHoleX - SIZE_DOT * 0.45},0 ${
+        centerHoleX - SIZE_DOT * 0.55
+      },${heightHole} ${centerHoleX},${heightHole} 
+      C${centerHoleX + SIZE_DOT * 0.55},${heightHole} ${
+        centerHoleX + SIZE_DOT * 0.45
       },0 ${centerHoleX + SIZE_DOT} 0 
       L${actualBarWidth * 2},0 L ${
         actualBarWidth * 2
