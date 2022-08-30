@@ -21,6 +21,7 @@ const DotComponent = (props: DotProps) => {
     barHeight,
     isRtl,
     navigationIndex,
+    heightHole = HEIGHT_HOLE
   } = props;
 
   // const
@@ -54,7 +55,7 @@ const DotComponent = (props: DotProps) => {
   const translateY = useInterpolate(
     progress,
     [0, 1],
-    [15 - bottom, -(barHeight - HEIGHT_HOLE + 5)]
+    [15 - barHeight, -(heightHole - HEIGHT_HOLE + 5)]
   );
 
   const opacity = useInterpolate(progress, [0, 1], [0.2, 1]);
@@ -84,7 +85,7 @@ const DotComponent = (props: DotProps) => {
       <Animated.View style={iconContainerStyle}>
         {routes.map(({ icon }, index: number) => (
           <IconDot key={index} index={index} selectedIndex={selectedIndex}>
-            {icon({ progress, focused: navigationIndex === index })}
+            {navigationIndex === index ? icon({ progress, focused: navigationIndex === index }) : null}
           </IconDot>
         ))}
       </Animated.View>
